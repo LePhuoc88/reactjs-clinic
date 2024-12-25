@@ -1,0 +1,16 @@
+.update__user {
+    label {
+        margin-top: 5px;
+    }
+}
+.avatar-preview {
+    margin-top: 5px;
+    img {
+        max-width: 100%;
+        max-height: 100px;
+        width: auto;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}

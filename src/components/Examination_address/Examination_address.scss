@@ -1,0 +1,83 @@
+.doctor__ex_adress {
+    margin: 20px 0;
+
+    h4 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    h5 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    p {
+        color: var(--text-color);
+        font-weight: 300;
+        font-size: 14px;
+    }
+}
+.doctor__ex_price {
+    .doctor__ex_price_content {
+        .doctor__ex_price_header {
+            display: flex;
+            align-items: center;
+
+            h4 {
+                margin: 0;
+                font-size: 15px;
+                color: #666;
+            }
+
+            p {
+                margin: 0 10px 0 5px;
+            }
+
+            .doctor__ex_price_see_more {
+                color: var(--primary);
+                cursor: pointer;
+            }
+        }
+
+        .doctor__ex_price_content_detail {
+            margin-top: 10px;
+            .doctor__ex_price_content_detail_pri {
+                padding: 3px;
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                background-color: #f8f8f8;
+                border: 1px solid #dddddd;
+
+                span {
+                    p {
+                        margin: 0;
+                        color: #666666;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            .doctor__ex_price_content_detail_des {
+                padding: 3px;
+                background-color: #eeeeee;
+                border-top: 2px solid #ddd;
+
+                p {
+                    margin: 0;
+                    color: var(--text-color);
+                }
+            }
+        }
+
+        .doctor__ex_price_see_more_bottom {
+            text-align: right; // Align the text to the right
+            margin-top: 10px; // Add some spacing between the details and the "Ẩn bản giá" text
+            span {
+                color: var(--primary);
+                cursor: pointer;
+            }
+        }
+    }
+}

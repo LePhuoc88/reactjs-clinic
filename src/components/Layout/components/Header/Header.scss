@@ -1,0 +1,112 @@
+.header {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    height: 70px;
+    display: flex;
+    box-shadow: 0 4px 7px 0px rgb(181 234 255 / 61%);
+
+    .header__content {
+        align-items: center;
+        .Logo {
+            img {
+                width: 170px;
+                height: 70px;
+                object-fit: contain;
+            }
+        }
+        .header__menu {
+            display: flex;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: #000;
+
+                .header__menu_title {
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                .header__menu_desription {
+                    font-size: 15px;
+                    color: var(--text-color);
+                }
+            }
+        }
+        .header__right {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+
+            .header__support {
+                color: var(--text-color);
+                font-size: 15px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                svg {
+                    margin-right: 5px;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+            .header__avatar {
+                img {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                }
+            }
+            .header__icon_menu {
+                align-items: center;
+                display: flex;
+                color: #000;
+                cursor: pointer;
+                svg {
+                    font-size: 30px;
+                }
+            }
+            .header__dropdown {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+                padding: 10px 0;
+                display: flex;
+                flex-direction: column;
+                opacity: 0;
+                transform: translateY(-20px);
+                transition: all 0.3s ease;
+                visibility: hidden;
+
+                &.show {
+                    opacity: 1;
+                    transform: translateY(0);
+                    visibility: visible;
+                }
+
+                .dropdown__item {
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    color: var(--text-color);
+                    cursor: pointer;
+
+                    svg {
+                        font-size: 16px;
+                        margin-right: 10px;
+                    }
+
+                    &:hover {
+                        background-color: #f0f0f0;
+                    }
+                }
+            }
+        }
+    }
+}

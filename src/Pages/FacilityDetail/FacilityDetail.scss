@@ -1,0 +1,137 @@
+.facilitydetail {
+    position: relative;
+
+    .banner {
+        position: relative;
+        background-image: url('../../assets/img/media/benh-vien-cho-ray_bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+    }
+
+    .facilitydetail_content {
+        position: relative;
+        top: -50px;
+        padding: 30px 30px 5px;
+        box-shadow: 0 3px 13px #01499e59;
+        background-color: white;
+        border-radius: 10px;
+
+        .facilitydetail_content_text {
+            max-height: 250px;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+
+            &.expanded {
+                max-height: none;
+            }
+        }
+
+        .facilitydetail_content_title {
+            font-weight: 500;
+        }
+
+        ul {
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+        .see_more {
+            width: fit-content;
+            padding: 15px 15px 15px 0;
+            color: #328fd8;
+            cursor: pointer;
+            margin: 0;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        margin-bottom: 20px;
+        button {
+            border-color: #ced4da;
+            border-radius: 6px;
+            box-shadow: 0px 1px 2px 0px #ccc;
+
+            &:active {
+                border-color: #ced4da;
+            }
+        }
+
+        .dropdown-menu {
+            display: block;
+            z-index: 1050;
+            position: absolute;
+            box-shadow: 0px 1px 2px 0px #ccc;
+
+            .dropdown-item {
+                &:active {
+                    background-color: transparent;
+                    color: inherit;
+                }
+            }
+        }
+    }
+
+    .specialtydetail__item {
+        margin-bottom: 20px;
+        padding: 10px;
+        box-shadow: 0 3px 13px #01499e59;
+
+        .specialtydetail__item_left {
+            display: flex;
+            .specialtydetail__item_left_img {
+                margin-right: 15px;
+                text-decoration: none;
+                img {
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    object-fit: contain;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: var(--primary);
+                    font-size: 15px;
+                }
+            }
+            .specialtydetail__item_left_content {
+                a {
+                    font-size: 20px;
+                    color: var(--primary);
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                p {
+                    margin-bottom: 4px;
+                    font-weight: 300;
+                    color: var(--text-color);
+                    font-size: 15px;
+                    letter-spacing: 0.4px;
+                    line-height: 1.6;
+                }
+                .specialtydetail__item_left_content_address {
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .specialtydetail__item_right {
+            padding: 15px 15px 8px;
+            border-left: 1px solid #ccc;
+            .br_bottom {
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.medical__history {
+    padding: 20px;
+    .header_left {
+        display: flex;
+        margin-bottom: 5px;
+
+        .header_path {
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: var(--primary);
+
+                &:hover {
+                    color: #00a8eb;
+                }
+            }
+        }
+
+        .vertical {
+            padding: 0 4px;
+            font-weight: 100;
+        }
+
+        .header_text {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 15px;
+                margin-top: 3px;
+            }
+        }
+    }
+    .doctor__title {
+        h2 {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    // .filter {
+    //     margin-top: 25px;
+    //     h3 {
+    //         font-size: 20px;
+    //     }
+    //     .filter__item {
+    //         display: flex;
+    //         align-items: center;
+    //         margin-top: 10px;
+    //         p {
+    //             width: 90px;
+    //             margin: 0;
+    //         }
+
+    //         input {
+    //             cursor: pointer;
+    //             border-radius: 5px;
+    //             padding: 0 4px;
+    //             border: 1px solid #000;
+    //         }
+    //     }
+    //     .filter__btn {
+    //         margin: 15px 15px 15px 0;
+    //     }
+    // }
+}

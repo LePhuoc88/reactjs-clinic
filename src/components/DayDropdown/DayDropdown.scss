@@ -1,0 +1,71 @@
+.dropdown_day {
+    position: relative;
+    cursor: pointer;
+    max-width: 120px;
+    .dropdown_day_content {
+        p {
+            color: #337ab7;
+            font-weight: 500;
+            margin: 0;
+            border-bottom: 2px solid #ccc;
+            width: fit-content;
+            padding: 0 0px 3px;
+        }
+    }
+    .dropdown_day_list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        max-height: 200px;
+        overflow-y: auto;
+        list-style: none;
+        padding: 0;
+        box-shadow: -1px 2px 4px 0px rgb(12 107 218 / 35%);
+        li {
+            padding: 2px 5px;
+            &:hover {
+                background-color: #eee;
+            }
+        }
+    }
+}
+.doctor__calendar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: var(--text-color);
+    font-size: 15px;
+    svg {
+        margin-right: 6px;
+    }
+    p {
+        margin: 0;
+        font-weight: 500;
+    }
+}
+.doctor__calendar_hour {
+    margin: 6px 0;
+    .doctor__calendar_hour_content {
+        padding: 10px;
+        margin: 6px 8px 5px 0px;
+        text-decoration: none;
+        border: 2px solid #eee;
+        background-color: #eeeeee;
+        color: #000;
+
+        &:hover {
+            border: 2px solid var(--primary);
+        }
+    }
+}
+.choose {
+    p {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: var(--text-color);
+    }
+}

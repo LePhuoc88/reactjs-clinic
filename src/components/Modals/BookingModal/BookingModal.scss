@@ -1,0 +1,42 @@
+.modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%; // Ensure it takes the full height of the viewport
+
+    .modal-header {
+        padding: 15px;
+        .modal-title {
+            font-size: 17px;
+        }
+    }
+    .modal-body {
+        .Modal_Booking_content {
+            .Modal_Booking_content_doctor {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+                .Modal_Booking_content_doctor_text {
+                    margin-left: 10px;
+                    h4 {
+                        font-size: 16px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            .Modal_Booking_content_info {
+                margin-top: 10px;
+                label {
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+.useinfo {
+    padding: 20px;
+    .header_left {
+        display: flex;
+        margin-bottom: 5px;
+
+        .header_path {
+            a {
+                text-decoration: none;
+                font-size: 15px;
+                color: var(--primary);
+
+                &:hover {
+                    color: #00a8eb;
+                }
+            }
+        }
+
+        .vertical {
+            padding: 0 4px;
+            font-weight: 100;
+        }
+
+        .header_text {
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 15px;
+                margin-top: 3px;
+            }
+        }
+    }
+    .doctor__title {
+        h2 {
+            font-size: 20px;
+        }
+    }
+    .useinfo__wrap {
+        padding: 30px 30px 30px 50px;
+        border-radius: 30px;
+        box-shadow: 0 4.5px 13px #01499e59;
+        display: flex;
+        width: 650px;
+        align-items: center;
+        .useinfo__wrap_img {
+            margin-right: 50px;
+            img {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+            }
+            h4 {
+                font-size: 22px;
+                color: var(--primary);
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+        .useinfo__wrap_content {
+            width: 100%;
+            .useinfo__wrap_content_item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                h5 {
+                    margin: 0;
+                    font-size: 18px;
+                    width: 110px;
+                }
+                p {
+                    margin: 0;
+                    font-size: 18px;
+                    align-items: center;
+                }
+                .useinfo__wrap_content_item_pw {
+                    text-security: disc; /* Thay thế nội dung bằng dấu chấm */
+                    -webkit-text-security: disc; /* Hỗ trợ cho trình duyệt Webkit */
+                    letter-spacing: 2px; /* Tùy chỉnh khoảng cách giữa các ký tự */
+                }
+            }
+        }
+        .useinfo__wrap_content_btn {
+            padding: 10px 20px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 20px;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: var(--primary);
+                color: #fff;
+            }
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+}

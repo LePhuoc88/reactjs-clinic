@@ -1,0 +1,372 @@
+.home {
+    .home__banner {
+        width: 100%;
+        height: 600px;
+        background-image: url('../../assets/img/Logo/home_banner.webp');
+        background-size: cover; /* Để hình ảnh bao phủ toàn bộ */
+        background-position: center; /* Đặt vị trí ở giữa */
+        background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+        position: relative; /* Để vị trí cho lớp phủ */
+
+        .home__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to top,
+                rgba(129, 129, 129, 1) 0%,
+                rgba(255, 255, 255, 0) 40%
+            ); /* Gradient từ trắng đậm xuống trong suốt */
+            pointer-events: none; /* Để các sự kiện chuột không bị chặn */
+        }
+        .home__banner_service {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            .home__banner_service_content {
+                display: flex;
+                flex-direction: column; /* Đặt hướng theo chiều dọc */
+                align-items: center;
+                margin: 0 20px;
+                .home__banner_service_icon {
+                    padding: 10px 12px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    margin-bottom: 5px;
+                    // box-shadow: 0 4px 7px 0px rgb(181 234 255 / 61%);
+
+                    svg {
+                        font-size: 24px;
+                        color: #26b9d2;
+                    }
+                }
+                .home__banner_service_desrip {
+                    text-align: center;
+                    // color: var(--text-color);
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    .home__specialty {
+        height: 500px;
+        padding: 60px 0;
+
+        .home__specialty_title {
+            display: flex;
+            justify-content: space-between;
+
+            .home__specialty_title_header {
+                display: flex;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: -45px;
+                    top: -25px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px 8px;
+                background-color: #daf3f6;
+                border-radius: 20px;
+
+                h3 {
+                    font-size: 20px;
+                    color: #34929e;
+                    margin: 0;
+                }
+            }
+        }
+
+        .home__specialty_content {
+            margin: 20px 0;
+
+            .home__specialty_content_item {
+                height: 300px;
+                text-align: center;
+                padding: 5px 30px 0;
+
+                a {
+                    // border: 2px solid #f1f1f1;
+                    border-radius: 30px;
+                    height: 97%;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: var(--text-color);
+                    display: block;
+                    box-sizing: border-box;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        box-shadow: 0 4.5px 13px #01499e59;
+                    }
+
+                    .home__specialty_content_item_img {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 18px;
+                        img {
+                            width: 200px;
+                            height: 180px;
+                            border-radius: 50%;
+                            box-shadow: 0 4px 7px 0px rgb(181 234 255 / 61%);
+                            object-fit: cover;
+                        }
+                    }
+
+                    .home__specialty_content_item_title {
+                        margin-top: 40px;
+                        h3 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            .slick-prev::before {
+                margin-left: -50px;
+                font-size: 45px;
+                color: #34929e;
+            }
+
+            .slick-next::before {
+                margin-left: 15px;
+                font-size: 45px;
+                color: #34929e;
+            }
+        }
+    }
+    .home__doctor {
+        height: 500px;
+        padding: 50px 0 0px;
+        background-image: url('../../assets//img//Logo//background_home.png');
+
+        .home__doctor_title {
+            display: flex;
+            justify-content: space-between;
+
+            .home__doctor_title_header {
+                display: flex;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: -45px;
+                    top: -25px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px 8px;
+                background-color: #daf3f6;
+                border-radius: 20px;
+
+                h3 {
+                    font-size: 20px;
+                    color: #34929e;
+                    margin: 0;
+                }
+            }
+        }
+
+        .home__doctor_content {
+            margin: 10px 0;
+
+            .home__doctor_content_item {
+                height: 290px;
+                text-align: center;
+                padding: 0 30px;
+
+                a {
+                    text-decoration: none;
+                    color: var(--text-color);
+                    display: block;
+                    box-sizing: border-box;
+
+                    .home__doctor_content_item_img {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 18px;
+                        img {
+                            width: 200px;
+                            height: 180px;
+                            border-radius: 50%;
+                            box-shadow: 0 4px 7px 0px rgb(181 234 255 / 61%);
+                            object-fit: cover;
+                        }
+                    }
+
+                    .home__doctor_content_item_title {
+                        margin-top: 40px;
+                        h3 {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+            .slick-prev::before {
+                margin-left: -50px;
+                font-size: 45px;
+                color: #34929e;
+            }
+
+            .slick-next::before {
+                margin-left: 15px;
+                font-size: 45px;
+                color: #34929e;
+            }
+        }
+    }
+    .home__medical {
+        height: 500px;
+        padding: 60px 0;
+
+        .home__medical_title {
+            display: flex;
+            justify-content: space-between;
+
+            .home__medical_title_header {
+                display: flex;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    right: -45px;
+                    top: -25px;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                padding: 10px 8px;
+                background-color: #daf3f6;
+                border-radius: 20px;
+
+                h3 {
+                    font-size: 20px;
+                    color: #34929e;
+                    margin: 0;
+                }
+            }
+        }
+        .home__medical_content {
+            margin: 20px 0;
+
+            .home__medical_content_item {
+                height: 360px;
+                padding: 5px 15px;
+
+                a {
+                    height: 96%;
+                    border: 2px solid #f1f1f1;
+                    border-radius: 30px;
+                    text-decoration: none;
+                    color: var(--text-color);
+                    display: block;
+                    box-sizing: border-box;
+                    padding: 5px 20px;
+
+                    &:hover {
+                        box-shadow: 0 3px 13px #01499e59;
+                    }
+
+                    .home__medical_content_item_img {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 5px;
+                        img {
+                            width: 200px;
+                            height: 180px;
+                            object-fit: contain;
+                        }
+                    }
+
+                    .home__medical_content_item_title {
+                        margin-top: 20px;
+                        h3 {
+                            font-size: 22px;
+                            height: 53px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    .home__medical_content_item_adress {
+                        display: flex;
+
+                        svg {
+                            font-size: 24px;
+                            margin-left: -3px;
+                        }
+
+                        p {
+                            height: 48px;
+                            overflow: hidden;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+            .slick-prev::before {
+                margin-left: -50px;
+                font-size: 45px;
+                color: #34929e;
+            }
+
+            .slick-next::before {
+                margin-left: 15px;
+                font-size: 45px;
+                color: #34929e;
+            }
+        }
+    }
+    .home__media {
+        height: 500px;
+        padding: 50px 0 0px;
+        background-image: url('../../assets//img//Logo//background_home.png');
+
+        .home__media_content {
+            margin-top: 20px;
+            .ratio {
+                border-radius: 25px;
+                overflow: hidden;
+                iframe {
+                    border-radius: inherit; // Apply the same border-radius to the iframe
+                }
+            }
+
+            .home__media_content_channel {
+                width: 100%;
+                height: 68px;
+                background-color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                margin-top: 16px;
+                img {
+                    width: 164px;
+                    height: 39px;
+                    object-fit: contain;
+                }
+            }
+            .col-lg-6 .row:first-child .home__media_content_channel {
+                margin-top: 0;
+            }
+        }
+    }
+}
